@@ -1,0 +1,26 @@
+name: Validate
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Use Node v26
+        uses: actions/setup-node@v6
+        with:
+          node-version: "26"
+          cache: "npm"
+
+      - run: npm ci
+      - run: npm run biome:check
+      - run: npm run build
+      - run: npm run build-storybook

@@ -1,0 +1,18 @@
+name: Format
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  format:
+    if: github.repository_owner == 'withastro'
+    uses: withastro/automation/.github/workflows/format.yml@290b37409535e2a496482b5bf0e4f5f2e4803f84 # v1.0.0
+    with:
+      command: "format"
+    secrets: inherit

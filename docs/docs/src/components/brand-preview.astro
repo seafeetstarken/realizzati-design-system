@@ -1,0 +1,173 @@
+---
+// BrandPreview.astro - Mockup conceitual de aplicação real das cores da Realizzati
+---
+
+<div class="luxury-card-container">
+  <div class="luxury-card-inner">
+    <div class="luxury-card-header">
+      <span class="brand-monogram">R</span>
+      <span class="brand-subtitle">Realizzati Móveis</span>
+    </div>
+    
+    <h3 class="luxury-card-title">Cozinha Provençal Sand Gold</h3>
+    
+    <p class="luxury-card-description">
+      O equilíbrio perfeito entre a robustez industrial e a marcenaria fina. 
+      Neste ambiente, a suavidade do tom Sand Gold nos detalhes em latão escovado é emoldurada pela sobriedade e sofisticação do Dark Espresso.
+    </p>
+    
+    <div class="luxury-card-footer">
+      <button class="luxury-button" type="button">
+        <span class="button-text">Estudar meu espaço</span>
+        <span class="button-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Base fonts and reset */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+  /* Container Double-Bezel (Efeito Chanfrado) */
+  .luxury-card-container {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    max-width: 440px;
+    margin: 2rem auto;
+    background-color: #FAF8F5; /* Warm Cream */
+    border: 1px solid rgba(223, 209, 193, 0.4); /* Golden Muted Border at 40% */
+    border-radius: 2rem; /* Cantos arredondados generosos */
+    padding: 1.25rem;
+    box-shadow: 0 16px 40px -10px rgba(53, 37, 32, 0.08);
+    transition: all 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+    box-sizing: border-box;
+  }
+
+  .luxury-card-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px -8px rgba(53, 37, 32, 0.15);
+    border-color: rgba(223, 209, 193, 0.8);
+  }
+
+  /* Painel Interno recuado */
+  .luxury-card-inner {
+    border: 1px solid rgba(223, 209, 193, 0.8); /* Borda chanfrada interna */
+    border-radius: 1.5rem;
+    padding: 2.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  /* Header do Card */
+  .luxury-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .brand-monogram {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FAF8F5;
+    background-color: #352520; /* Dark Espresso */
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .brand-subtitle {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #352520; /* Dark Espresso */
+    opacity: 0.65;
+  }
+
+  /* Título em Dark Espresso */
+  .luxury-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.85rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #352520; /* Dark Espresso */
+    margin: 0;
+  }
+
+  /* Descrição amigável */
+  .luxury-card-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #352520; /* Dark Espresso */
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  /* Botão "Button-in-Button" com Micro-movimento */
+  .luxury-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #C4A482; /* Sand Gold */
+    color: #352520; /* Dark Espresso */
+    border: none;
+    border-radius: 1rem;
+    padding: 0.4rem 0.4rem 0.4rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .button-text {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .button-icon-wrapper {
+    background-color: #352520; /* Dark Espresso */
+    color: #FAF8F5; /* Soft Cream */
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .arrow-icon {
+    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  /* Hover States */
+  .luxury-button:hover {
+    background-color: #D3B797; /* Luxury Gold Hover */
+    box-shadow: 0 8px 24px rgba(196, 164, 130, 0.35);
+  }
+
+  .luxury-button:hover .button-icon-wrapper {
+    background-color: #1D1311;
+  }
+
+  .luxury-button:hover .arrow-icon {
+    transform: translate(2px, -2px);
+  }
+
+  .luxury-button:active {
+    transform: scale(0.985);
+  }
+</style>

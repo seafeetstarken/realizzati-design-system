@@ -1,0 +1,72 @@
+{
+  "name": "tailwind-storybook",
+  "version": "3.0.0",
+  "description": "Starter for Tailwind CSS and Storybook.",
+  "type": "module",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/audunru/tailwind-storybook"
+  },
+  "keywords": [
+    "Tailwind",
+    "Storybook",
+    "Vite",
+    "React Testing Library",
+    "Typescript",
+    "Vitest"
+  ],
+  "author": "Audun Rundberg",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "prebuild": "tsc",
+    "build": "vite build",
+    "test": "vitest",
+    "biome:check": "biome check",
+    "biome:write": "biome check --write",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 4000",
+    "build-storybook": "storybook build",
+    "prepare": "husky",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "semantic-release": "^25.0.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@babel/core": "^7.29.7",
+    "@biomejs/biome": "^2.4.15",
+    "@rolldown/plugin-babel": "^0.2.0",
+    "@storybook/addon-docs": "^10.4.1",
+    "@storybook/addon-links": "^10.4.1",
+    "@storybook/addon-onboarding": "^10.4.1",
+    "@storybook/react-vite": "^10.4.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "@testing-library/react": "^16.3.2",
+    "@types/babel__core": "^7",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "autoprefixer": "^10.5.0",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
+    "lint-staged": "^17.0.5",
+    "storybook": "^10.3.6",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^4.1.7"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,json}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
+  }
+}

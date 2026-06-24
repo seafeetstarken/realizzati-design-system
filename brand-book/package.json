@@ -1,0 +1,10 @@
+{
+  "name": "realizzati-brand-book",
+  "version": "1.0.0",
+  "description": "Brand Book oficial da Realizzati Móveis — identidade visual, design system e manual de marca.",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve . --listen 4500 --single",
+    "open": "start http://localhost:4500"
+  }
+}
