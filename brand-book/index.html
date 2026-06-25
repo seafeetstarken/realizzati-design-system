@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brand Book — Realizzati Móveis</title>
-  <meta name="description" content="Brand Book oficial da Realizzati Móveis: identidade visual, design system, tom de voz e diretrizes de marca." />
+  <title>Brand Book V2 — Realizzati Móveis</title>
+  <meta name="description" content="Brand Book V2 oficial da Realizzati Móveis: identidade visual, design system, análise competitiva, motion design e diretrizes de marca." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
         <div class="logo-mark">R</div>
         <div class="logo-text">
           <span class="logo-name">Realizzati</span>
-          <span class="logo-subtitle">Brand Book</span>
+          <span class="logo-subtitle">Brand Book V2</span>
         </div>
       </div>
     </div>
@@ -48,27 +48,40 @@
 
       <div class="nav-group">
         <span class="nav-group-label">Identidade Visual</span>
-        <a class="nav-link" href="#paleta" data-section="paleta">
-          <span class="nav-icon">◆</span> Paleta de Cores
+        <a class="nav-link" href="#logo" data-section="logo">
+          <span class="nav-icon">◆</span> Logo &amp; Marca
         </a>
+        <a class="nav-link nav-link--sub" href="#paleta" data-section="paleta">Paleta de Cores</a>
         <a class="nav-link nav-link--sub" href="#tipografia" data-section="tipografia">Tipografia</a>
+        <a class="nav-link nav-link--sub" href="#iconografia" data-section="iconografia">Iconografia</a>
+        <a class="nav-link nav-link--sub" href="#fotografia" data-section="fotografia">Direção de Arte</a>
       </div>
 
       <div class="nav-group">
         <span class="nav-group-label">Design System</span>
-        <a class="nav-link" href="#tokens" data-section="tokens">
-          <span class="nav-icon">◆</span> Tokens &amp; Variáveis
+        <a class="nav-link" href="#grid" data-section="grid">
+          <span class="nav-icon">◆</span> Grid &amp; Layout
         </a>
+        <a class="nav-link nav-link--sub" href="#tokens" data-section="tokens">Tokens &amp; Variáveis</a>
         <a class="nav-link nav-link--sub" href="#componentes" data-section="componentes">Regras de Componentes</a>
-        <a class="nav-link nav-link--sub" href="#auditoria" data-section="auditoria">Auditoria de Consistência</a>
+        <a class="nav-link nav-link--sub" href="#motion" data-section="motion">Motion Design</a>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-group-label">Estratégia</span>
+        <a class="nav-link" href="#competitiva" data-section="competitiva">
+          <span class="nav-icon">◆</span> Análise Competitiva
+        </a>
+        <a class="nav-link nav-link--sub" href="#social" data-section="social">Social &amp; Templates</a>
       </div>
 
       <div class="nav-group">
         <span class="nav-group-label">Diretrizes</span>
-        <a class="nav-link" href="#agente" data-section="agente">
-          <span class="nav-icon">◆</span> Diretrizes de Agente
+        <a class="nav-link" href="#auditoria" data-section="auditoria">
+          <span class="nav-icon">◆</span> Auditoria
         </a>
-        <a class="nav-link nav-link--sub" href="#arquitetura" data-section="arquitetura">Arquitetura do Workspace</a>
+        <a class="nav-link nav-link--sub" href="#agente" data-section="agente">Diretrizes de Agente</a>
+        <a class="nav-link nav-link--sub" href="#arquitetura" data-section="arquitetura">Arquitetura</a>
       </div>
 
     </nav>
@@ -77,23 +90,40 @@
   </aside>
 
   <!-- ═══════════════════════════════════════════
+       HEADER BAR
+  ═══════════════════════════════════════════ -->
+  <div class="header-bar" id="headerBar">
+    <span class="header-bar-label">Realizzati · Manual da Marca V2</span>
+    
+    <button class="header-btn" id="printBtn" aria-label="Exportar PDF">
+      <span class="btn-icon">⎙</span>
+      <span class="btn-label">PDF</span>
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
        CONTEÚDO PRINCIPAL
   ═══════════════════════════════════════════ -->
   <main class="main-content" id="mainContent">
 
-    <!-- HERO -->
-    <header class="hero">
-      <div class="hero-eyebrow">Manual Oficial da Marca</div>
+    <!-- ═══ HERO ═══ -->
+    <header class="hero" id="hero">
+      <div class="hero-eyebrow">Manual Oficial da Marca · Versão 2.0</div>
       <h1 class="hero-title">Brand Book<br/><em>Realizzati Móveis</em></h1>
-      <p class="hero-desc">Diretrizes completas de identidade, comunicação e design system para garantir consistência em todos os pontos de contato da marca.</p>
+      <p class="hero-desc">Diretrizes completas de identidade, comunicação e design system para garantir consistência premium em todos os pontos de contato da marca.</p>
       <div class="hero-meta">
         <span class="hero-badge">Alto Padrão</span>
         <span class="hero-badge">Móveis Planejados</span>
         <span class="hero-badge">Sob Medida</span>
+        <span class="hero-badge" style="background: var(--color-brass-muted); border-color: rgba(166, 139, 91,0.3); color: var(--color-brass);">V2 · Brass Antique</span>
       </div>
+      <div class="hero-version">build 2.0.0 · SeafeetStarken · Orquestra de Sistemas de Gestão</div>
     </header>
 
-    <!-- ═══ SEÇÃO: POSICIONAMENTO ═══ -->
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: POSICIONAMENTO
+    ═══════════════════════════════════════════════════════ -->
     <section class="content-section" id="posicionamento">
       <div class="section-tag">Marca</div>
       <h2 class="section-title">Posicionamento Estratégico</h2>
@@ -116,6 +146,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- ═══ SEÇÃO: PERFIS ═══ -->
     <section class="content-section" id="perfis">
@@ -157,7 +188,7 @@
             </div>
             <div class="profile-item">
               <span class="label">Desejo Central</span>
-              <span>Fidelidade absoluta ao projeto renderizado em 3D. Acabamentos nobres, ferragens ocultas e visual imponente.</span>
+              <span>Fidelidade absoluta à intenção arquitetônica. Acabamentos nobres, ferragens ocultas e visual imponente.</span>
             </div>
             <div class="profile-item">
               <span class="label">Medo Central</span>
@@ -172,6 +203,7 @@
       </div>
     </section>
 
+
     <!-- ═══ SEÇÃO: PILARES ═══ -->
     <section class="content-section" id="pilares">
       <div class="section-tag">Marca</div>
@@ -182,7 +214,7 @@
         <div class="pillar">
           <div class="pillar-number">01</div>
           <h3>Rigor Técnico e Engenharia de Detalhe</h3>
-          <p>Calculamos folgas, estruturas de sustentação e alinhamentos de veios de madeira para que o resultado final seja simétrico e estruturalmente indestrutível. Não fazemos apenas móveis bonitos.</p>
+          <p>Calculamos folgas, estruturas de sustentação e alinhamentos de veios de madeira para que o resultado final seja simétrico e estruturalmente indestrutível.</p>
         </div>
         <div class="pillar">
           <div class="pillar-number">02</div>
@@ -196,6 +228,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- ═══ SEÇÃO: LINGUAGEM ═══ -->
     <section class="content-section" id="linguagem">
@@ -243,6 +276,7 @@
       </div>
     </section>
 
+
     <!-- ═══ SEÇÃO: COPY ═══ -->
     <section class="content-section" id="copy">
       <div class="section-tag">Tom de Voz</div>
@@ -285,6 +319,7 @@
       </div>
     </section>
 
+
     <!-- ═══ SEÇÃO: OBJEÇÕES ═══ -->
     <section class="content-section" id="objecoes">
       <div class="section-tag">Tom de Voz</div>
@@ -308,14 +343,88 @@
       </div>
     </section>
 
-    <!-- ═══ SEÇÃO: PALETA ═══ -->
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: LOGO & MARCA (V2 NEW)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="logo">
+      <div class="section-tag">Identidade Visual</div>
+      <h2 class="section-title">Logo &amp; Marca</h2>
+      <p class="section-intro">O logo da Realizzati deve transmitir solidez técnica e elegância. Abaixo estão as variações aprovadas, zonas de proteção e exemplos de usos incorretos.</p>
+
+            <!-- Variações -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-xl); margin-bottom: var(--space-lg); color: var(--theme-text);">Variações Aprovadas</h3>
+      <div class="logo-variations" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="logo-variant" style="background: var(--color-pure-dark); border-radius: 8px; padding: 2rem; text-align: center;">
+          <img src="assets/logos/04.svg" alt="Realizzati Positiva" style="max-width: 100%; max-height: 60px; margin-bottom: 1rem;" />
+          <div style="font-weight: 600; margin-bottom: 0.5rem; color: #FAF8F5 !important;">Positiva (Fundo Escuro)</div>
+          <div style="font-size: 0.875rem; opacity: 0.8; color: #FAF8F5 !important;">Uso principal em fundos #1D1311</div>
+        </div>
+        <div class="logo-variant" style="background: #FFFFFF; border: 1px solid rgba(53, 37, 32, 0.12); border-radius: 8px; padding: 2rem; text-align: center;">
+          <img src="assets/logos/03.svg" alt="Realizzati Cor" style="max-width: 100%; max-height: 60px; margin-bottom: 1rem;" />
+          <div style="font-weight: 600; margin-bottom: 0.5rem; color: #352520 !important;">Original (Fundo Claro)</div>
+          <div style="font-size: 0.875rem; opacity: 0.8; color: #352520 !important;">Uso em fundos #FAF8F5 ou brancos</div>
+        </div>
+        <div class="logo-variant" style="background: var(--color-espresso); border-radius: 8px; padding: 2rem; text-align: center;">
+          <img src="assets/logos/01.svg" alt="Realizzati Dourada" style="max-width: 100%; max-height: 60px; margin-bottom: 1rem;" />
+          <div style="font-weight: 600; margin-bottom: 0.5rem; color: #FAF8F5 !important;">Dourada Escura</div>
+          <div style="font-size: 0.875rem; opacity: 0.8; color: #FAF8F5 !important;">Para aplicações de prestígio e caixas</div>
+        </div>
+        <div class="logo-variant" style="background: #FAF8F5; border: 1px solid rgba(53, 37, 32, 0.12); border-radius: 8px; padding: 2rem; text-align: center;">
+          <img src="assets/logos/perfil.svg" alt="Ícone" style="max-width: 100%; max-height: 50px; margin-bottom: 1rem;" />
+          <div style="font-weight: 600; margin-bottom: 0.5rem; color: #352520 !important;">Compacta (Símbolo)</div>
+          <div style="font-size: 0.875rem; opacity: 0.8; color: #352520 !important;">Ícone "R" para avatares e favicons</div>
+        </div>
+      </div>
+
+      <!-- Zona de Exclusão -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-xl); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); color: var(--theme-text);">Zona de Exclusão</h3>
+      <p style="font-size: var(--text-sm); color: var(--color-muted); margin-bottom: var(--space-lg);">O espaço mínimo ao redor do logo deve ser equivalente a 1× a altura do "R". Tamanho mínimo: 80px digital / 25mm impresso.</p>
+      <div class="logo-exclusion">
+        <div class="logo-exclusion-box">
+          <span class="logo-exclusion-label logo-exclusion-label--top">1× altura R</span>
+          <span class="logo-exclusion-label logo-exclusion-label--bottom">1× altura R</span>
+          <span class="logo-exclusion-label logo-exclusion-label--left">1×</span>
+          <span class="logo-exclusion-label logo-exclusion-label--right">1×</span>
+          <div class="logo-exclusion-inner" style="display:flex; justify-content:center; align-items:center;"><img src="assets/logos/03.svg" style="height:40px;"/></div>
+        </div>
+      </div>
+
+      <!-- Usos Incorretos -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-xl); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); color: var(--theme-text);">Usos Incorretos</h3>
+      
+<div class="logo-donts">
+        <div class="logo-dont">
+          <div class="logo-dont-preview"><img src="assets/logos/03.svg" style="height:30px; transform: scaleX(1.4);"/></div>
+          <div class="logo-dont-label">❌ Não distorça</div>
+        </div>
+        <div class="logo-dont">
+          <div class="logo-dont-preview"><img src="assets/logos/03.svg" style="height:30px; filter: hue-rotate(90deg) saturate(3);"/></div>
+          <div class="logo-dont-label">❌ Não altere a cor</div>
+        </div>
+        <div class="logo-dont">
+          <div class="logo-dont-preview"><img src="assets/logos/03.svg" style="height:30px; filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.5));"/></div>
+          <div class="logo-dont-label">❌ Não adicione sombras</div>
+        </div>
+        <div class="logo-dont">
+          <div class="logo-dont-preview" style="background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,0,0,0.1) 5px, rgba(255,0,0,0.1) 10px);"><img src="assets/logos/03.svg" style="height:30px; opacity: 0.5;"/></div>
+          <div class="logo-dont-label">❌ Não use sobre padrões</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: PALETA DE CORES (V2 EXPANDED)
+    ═══════════════════════════════════════════════════════ -->
     <section class="content-section" id="paleta">
       <div class="section-tag">Identidade Visual</div>
       <h2 class="section-title">Paleta de Cores</h2>
-      <p class="section-intro">Cinco tons que definem a identidade cromática da Realizzati. Clique em qualquer cor para copiar o código hexadecimal.</p>
+      <p class="section-intro">Paleta expandida na V2 com acento Brass Antique, escalas semânticas e neutrals completos. Clique em qualquer cor para copiar o código hexadecimal.</p>
 
+      <!-- Core palette -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-lg); margin-bottom: var(--space-lg); color: var(--theme-text);">Paleta Core</h3>
       <div class="color-palette">
-
         <div class="color-swatch" data-hex="#1D1311" id="swatch-pure-dark">
           <div class="swatch-preview" style="background:#1D1311;">
             <span class="swatch-copy-hint">clique para copiar</span>
@@ -325,10 +434,6 @@
             <div class="swatch-hex">#1D1311</div>
             <div class="swatch-hsl">HSL 14° 25% 10%</div>
             <div class="swatch-usage">Fundo primário do modo escuro. Fornece contraste nobre com matiz marrom quente — nunca use preto puro (#000).</div>
-            <div class="swatch-donts">
-              <span class="dont-label">Don't</span>
-              Não use <code>#000000</code> ou <code>#121212</code>. Sempre preserve o matiz quente.
-            </div>
           </div>
         </div>
 
@@ -340,11 +445,7 @@
             <div class="swatch-name">Dark Espresso</div>
             <div class="swatch-hex">#352520</div>
             <div class="swatch-hsl">HSL 14° 25% 17%</div>
-            <div class="swatch-usage">Transmite solidez da madeira nobre. Use como fundo de blocos e heroes escuros, e como cor de títulos sobre fundos claros.</div>
-            <div class="swatch-donts">
-              <span class="dont-label">Don't</span>
-              Não use sobre fundos cinzas puros sem contraste. Não aplique em textos abaixo de 12px sobre fundos escuros.
-            </div>
+            <div class="swatch-usage">Solidez da madeira nobre. Fundo de blocos e heroes escuros, e cor de títulos sobre fundos claros.</div>
           </div>
         </div>
 
@@ -356,11 +457,7 @@
             <div class="swatch-name">Sand Gold</div>
             <div class="swatch-hex">#C4A482</div>
             <div class="swatch-hsl">HSL 31° 36% 64%</div>
-            <div class="swatch-usage">Tom do latão escovado. Exclusivo para elementos de alta hierarquia: CTAs, ícones de destaque e hover de links.</div>
-            <div class="swatch-donts">
-              <span class="dont-label">Don't</span>
-              Não use em parágrafos longos (contraste baixo). Não aplique em grandes blocos sólidos — destrói a sensação de "detalhe precioso".
-            </div>
+            <div class="swatch-usage">Tom do latão escovado. Exclusivo para CTAs, ícones de destaque e hover de links.</div>
           </div>
         </div>
 
@@ -373,10 +470,6 @@
             <div class="swatch-hex">#DFD1C1</div>
             <div class="swatch-hsl">HSL 31° 20% 85%</div>
             <div class="swatch-usage">Exclusivo para linhas de divisão, bordas de cards (efeito Double-Bezel) e contornos finos de inputs.</div>
-            <div class="swatch-donts">
-              <span class="dont-label">Don't</span>
-              Nunca use em textos. Não use bordas maiores de 2px — as linhas devem ser finas para simular marcenaria fina.
-            </div>
           </div>
         </div>
 
@@ -388,25 +481,124 @@
             <div class="swatch-name">Soft Cream</div>
             <div class="swatch-hex">#FAF8F5</div>
             <div class="swatch-hsl">HSL 40° 33% 98%</div>
-            <div class="swatch-usage">Off-white luxuoso que suaviza a leitura. Padrão para fundos de páginas claras e cards em interfaces escuras.</div>
-            <div class="swatch-donts">
-              <span class="dont-label">Don't</span>
-              Não sobreponha a textos em branco puro. Não use como cor de texto sobre imagens sem overlay escuro.
-            </div>
+            <div class="swatch-usage">Off-white luxuoso. Padrão para fundos de páginas claras e cards em interfaces escuras.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brass Antique Accent (V2) -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-lg); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); color: var(--color-brass);">✦ Brass Antique (V2)</h3>
+      <div class="color-palette">
+        <div class="color-swatch" data-hex="#A68B5B" id="swatch-brass">
+          <div class="swatch-preview" style="background:#A68B5B;">
+            <span class="swatch-copy-hint">clique para copiar</span>
+          </div>
+          <div class="swatch-info">
+            <div class="swatch-name">Brass Antique</div>
+            <div class="swatch-hex">#A68B5B</div>
+            <div class="swatch-hsl">HSL 38° 29% 50%</div>
+            <div class="swatch-usage">Acento principal V2. Exclusividade contemporânea e luxo moderno. Uso em CTAs interativos, badges e estados de hover.</div>
           </div>
         </div>
 
+        <div class="color-swatch" data-hex="#C4B090" id="swatch-brass-light">
+          <div class="swatch-preview" style="background:#C4B090;">
+            <span class="swatch-copy-hint">clique para copiar</span>
+          </div>
+          <div class="swatch-info">
+            <div class="swatch-name">Brass Antique Light</div>
+            <div class="swatch-hex">#C4B090</div>
+            <div class="swatch-hsl">HSL 38° 35% 66%</div>
+            <div class="swatch-usage">Versão suavizada para backgrounds e estados desabilitados no modo escuro.</div>
+          </div>
+        </div>
+
+        <div class="color-swatch" data-hex="#7A623A" id="swatch-brass-dark">
+          <div class="swatch-preview" style="background:#7A623A;">
+            <span class="swatch-copy-hint">clique para copiar</span>
+          </div>
+          <div class="swatch-info">
+            <div class="swatch-name">Brass Antique Dark</div>
+            <div class="swatch-hex">#7A623A</div>
+            <div class="swatch-hsl">HSL 38° 35% 35%</div>
+            <div class="swatch-usage">Contraste WCAG AA sobre fundos claros. Uso em textos interativos no Light Mode.</div>
+          </div>
+        </div>
       </div>
 
-      <!-- Toast de cópia -->
-      <div class="copy-toast" id="copyToast">✓ Copiado!</div>
+      <!-- Semantic colors -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-lg); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); color: var(--theme-text);">Escalas Semânticas</h3>
+      <div class="semantic-colors">
+        <div class="semantic-swatch" data-hex="#4A7C59">
+          <div class="semantic-dot" style="background: #4A7C59;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Success</div>
+            <div class="semantic-value">#4A7C59</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#6B9B78">
+          <div class="semantic-dot" style="background: #6B9B78;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Success Light</div>
+            <div class="semantic-value">#6B9B78</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#C4944A">
+          <div class="semantic-dot" style="background: #C4944A;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Warning</div>
+            <div class="semantic-value">#C4944A</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#DEB36E">
+          <div class="semantic-dot" style="background: #DEB36E;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Warning Light</div>
+            <div class="semantic-value">#DEB36E</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#A94442">
+          <div class="semantic-dot" style="background: #A94442;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Error</div>
+            <div class="semantic-value">#A94442</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#C66664">
+          <div class="semantic-dot" style="background: #C66664;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Error Light</div>
+            <div class="semantic-value">#C66664</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#6B7B8D">
+          <div class="semantic-dot" style="background: #6B7B8D;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Info</div>
+            <div class="semantic-value">#6B7B8D</div>
+          </div>
+        </div>
+        <div class="semantic-swatch" data-hex="#8D9DAF">
+          <div class="semantic-dot" style="background: #8D9DAF;"></div>
+          <div class="semantic-info">
+            <div class="semantic-name">Info Light</div>
+            <div class="semantic-value">#8D9DAF</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ═══ SEÇÃO: TIPOGRAFIA ═══ -->
+    <!-- Toast de cópia -->
+    <div class="copy-toast" id="copyToast">✓ Copiado!</div>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: TIPOGRAFIA (V2 EXPANDED)
+    ═══════════════════════════════════════════════════════ -->
     <section class="content-section" id="tipografia">
       <div class="section-tag">Identidade Visual</div>
       <h2 class="section-title">Tipografia</h2>
-      <p class="section-intro">Duas famílias tipográficas que equilibram autoridade clássica e clareza moderna.</p>
+      <p class="section-intro">Duas famílias tipográficas que equilibram autoridade clássica e clareza moderna, agora com escala fluida responsiva via <code style="background: rgba(196,164,130,0.1); color: var(--color-sand-gold); padding: 0.1rem 0.4rem; border-radius: var(--radius-sm); font-size: 0.85em;">clamp()</code>.</p>
 
       <div class="type-showcase">
         <div class="type-card">
@@ -434,11 +626,197 @@
               <span>Medium 500</span>
               <span>SemiBold 600</span>
             </div>
-            <p class="type-note">Alta legibilidade em todas as resoluções. Ideal para textos longos, tabelas e elementos de interface. Base para todo o design system.</p>
+            <p class="type-note">Alta legibilidade em todas as resoluções. Ideal para textos longos, tabelas e elementos de interface.</p>
           </div>
         </div>
       </div>
+
+      <!-- Fluid Type Scale Preview -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-xl); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); color: var(--theme-text);">Escala Fluida (clamp)</h3>
+      <div class="type-scale-preview">
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-5xl</span>
+          <span class="type-scale-sample" style="font-family: var(--font-display); font-size: var(--text-5xl); font-weight: 700;">Realizzati</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-4xl</span>
+          <span class="type-scale-sample" style="font-family: var(--font-display); font-size: var(--text-4xl); font-weight: 600;">Móveis Planejados</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-3xl</span>
+          <span class="type-scale-sample" style="font-family: var(--font-display); font-size: var(--text-3xl);">Sob Medida</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-2xl</span>
+          <span class="type-scale-sample" style="font-size: var(--text-2xl); font-weight: 600;">Engenharia de Detalhe</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-xl</span>
+          <span class="type-scale-sample" style="font-size: var(--text-xl); font-weight: 500;">Projetos Exclusivos</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-lg</span>
+          <span class="type-scale-sample" style="font-size: var(--text-lg);">Precisão milimétrica ao projeto</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-base</span>
+          <span class="type-scale-sample" style="font-size: var(--text-base);">Corpo de texto padrão para parágrafos e descrições extensas do produto.</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-sm</span>
+          <span class="type-scale-sample" style="font-size: var(--text-sm);">Labels, legendas e notas de rodapé com alta legibilidade.</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">--text-xs</span>
+          <span class="type-scale-sample" style="font-size: var(--text-xs);">METADATA · TAGS · BREADCRUMBS · TIMESTAMPS</span>
+        </div>
+      </div>
     </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: ICONOGRAFIA (V2 NEW)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="iconografia">
+      <div class="section-tag">Identidade Visual</div>
+      <h2 class="section-title">Iconografia</h2>
+      <p class="section-intro">SVG line icons personalizados com traço de 1.5px e cantos arredondados. Grid de 24×24px. O estilo minimalista reforça a precisão da marcenaria fina.</p>
+
+      <div class="icon-grid">
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <span class="icon-cell-name">Menu</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          <span class="icon-cell-name">Fechar</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span class="icon-cell-name">Seta Direita</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span class="icon-cell-name">Seta Esquerda</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          <span class="icon-cell-name">Chevron</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span class="icon-cell-name">Telefone</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+          <span class="icon-cell-name">Email</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span class="icon-cell-name">Calendário</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="icon-cell-name">Download</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          <span class="icon-cell-name">Check</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span class="icon-cell-name">Info</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span class="icon-cell-name">Alerta</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span class="icon-cell-name">Estrela</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span class="icon-cell-name">Coração</span>
+        </div>
+        <div class="icon-cell">
+          <svg viewBox="0 0 24 24"><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><path d="M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/></svg>
+          <span class="icon-cell-name">Régua</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: DIREÇÃO DE ARTE & FOTOGRAFIA (V2 NEW)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="fotografia">
+      <div class="section-tag">Identidade Visual</div>
+      <h2 class="section-title">Direção de Arte &amp; Fotografia</h2>
+      <p class="section-intro">Estilo lifestyle premium: ambientes com pessoas reais usando o espaço, luz natural quente e ângulos cinematográficos. Fotografias devem transmitir a experiência de viver com mobiliário Realizzati.</p>
+
+      <div class="photo-placeholder">
+        <div class="photo-placeholder-icon">📸</div>
+        <div class="photo-placeholder-text">Fotografia Lifestyle Premium — Cozinha planejada com família interagindo no espaço, iluminação golden hour lateral, profundidade de campo suave nas ferragens.</div>
+      </div>
+
+      <div class="photo-guidelines">
+        <div class="photo-guideline">
+          <h4>✅ Faça</h4>
+          <p>Pessoas reais interagindo com o ambiente. Luz natural quente (golden hour). Ângulos de 3/4 que mostram profundidade. Foco em texturas de madeira e detalhes de acabamento. ISO baixo, sem ruído.</p>
+        </div>
+        <div class="photo-guideline">
+          <h4>❌ Não Faça</h4>
+          <p>Ambientes vazios e estéreis. Flash direto ou luz fluorescente. Fotos frontais chapadas sem profundidade. Filtros excessivos, HDR agressivo ou saturação artificial. Marca d'água sobreposta.</p>
+        </div>
+        <div class="photo-guideline">
+          <h4>🎨 Filtro Padrão</h4>
+          <p>Temperatura: +10 (quente). Contraste: +5 (sutil). Vignette: leve nas bordas. Highlights: -10 (preservar detalhes nas áreas claras). Shadows: +5 (revelar texturas nas sombras).</p>
+        </div>
+        <div class="photo-guideline">
+          <h4>📐 Overlay para Texto</h4>
+          <p>Gradiente escuro de baixo para cima sobre imagens de ambiente:<br/><code style="font-size: 0.75rem; color: var(--color-sand-gold);">linear-gradient(to top, rgba(29,19,17,0.9) 0%, transparent 60%)</code></p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: GRID & LAYOUT (V2 NEW)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="grid">
+      <div class="section-tag">Design System</div>
+      <h2 class="section-title">Grid &amp; Layout</h2>
+      <p class="section-intro">Sistema de 12 colunas com gutter de 24px e max-width de 1200px. Breakpoints responsivos para todos os dispositivos.</p>
+
+      <!-- Grid Demo -->
+      <div class="grid-demo">
+        <div class="grid-demo-col">1</div>
+        <div class="grid-demo-col">2</div>
+        <div class="grid-demo-col">3</div>
+        <div class="grid-demo-col">4</div>
+        <div class="grid-demo-col">5</div>
+        <div class="grid-demo-col">6</div>
+        <div class="grid-demo-col">7</div>
+        <div class="grid-demo-col">8</div>
+        <div class="grid-demo-col">9</div>
+        <div class="grid-demo-col">10</div>
+        <div class="grid-demo-col">11</div>
+        <div class="grid-demo-col">12</div>
+      </div>
+
+      <!-- Breakpoints -->
+      <div class="breakpoint-bar">
+        <div class="breakpoint-tag"><strong>sm</strong> 640px</div>
+        <div class="breakpoint-tag"><strong>md</strong> 768px</div>
+        <div class="breakpoint-tag"><strong>lg</strong> 1024px</div>
+        <div class="breakpoint-tag"><strong>xl</strong> 1280px</div>
+        <div class="breakpoint-tag"><strong>2xl</strong> 1536px</div>
+        <div class="breakpoint-tag"><strong>gutter</strong> 24px</div>
+        <div class="breakpoint-tag"><strong>max-width</strong> 1200px</div>
+      </div>
+    </section>
+
 
     <!-- ═══ SEÇÃO: TOKENS ═══ -->
     <section class="content-section" id="tokens">
@@ -448,13 +826,14 @@
 
       <div class="token-groups">
         <div class="token-group">
-          <h3 class="token-group-title">Cores</h3>
+          <h3 class="token-group-title">Cores Core</h3>
           <div class="token-list">
             <div class="token-row"><code>--color-pure-dark</code><span>#1D1311</span></div>
             <div class="token-row"><code>--color-espresso</code><span>#352520</span></div>
             <div class="token-row"><code>--color-sand-gold</code><span>#C4A482</span></div>
             <div class="token-row"><code>--color-border</code><span>#DFD1C1</span></div>
             <div class="token-row"><code>--color-cream</code><span>#FAF8F5</span></div>
+            <div class="token-row"><code>--color-brass</code><span>#A68B5B</span></div>
           </div>
         </div>
 
@@ -463,13 +842,10 @@
           <div class="token-list">
             <div class="token-row"><code>--font-display</code><span>'Playfair Display', serif</span></div>
             <div class="token-row"><code>--font-body</code><span>'Inter', sans-serif</span></div>
-            <div class="token-row"><code>--text-xs</code><span>0.75rem</span></div>
-            <div class="token-row"><code>--text-sm</code><span>0.875rem</span></div>
-            <div class="token-row"><code>--text-base</code><span>1rem</span></div>
-            <div class="token-row"><code>--text-lg</code><span>1.125rem</span></div>
-            <div class="token-row"><code>--text-xl</code><span>1.25rem</span></div>
-            <div class="token-row"><code>--text-2xl</code><span>1.5rem</span></div>
-            <div class="token-row"><code>--text-4xl</code><span>2.25rem</span></div>
+            <div class="token-row"><code>--text-xs</code><span>clamp(0.70rem…0.80rem)</span></div>
+            <div class="token-row"><code>--text-base</code><span>clamp(0.95rem…1.10rem)</span></div>
+            <div class="token-row"><code>--text-2xl</code><span>clamp(1.50rem…2.00rem)</span></div>
+            <div class="token-row"><code>--text-5xl</code><span>clamp(2.80rem…4.50rem)</span></div>
           </div>
         </div>
 
@@ -482,23 +858,24 @@
             <div class="token-row"><code>--space-lg</code><span>1.5rem</span></div>
             <div class="token-row"><code>--space-xl</code><span>2rem</span></div>
             <div class="token-row"><code>--space-2xl</code><span>3rem</span></div>
-            <div class="token-row"><code>--space-3xl</code><span>4rem</span></div>
+            <div class="token-row"><code>--space-3xl</code><span>4.5rem</span></div>
           </div>
         </div>
 
         <div class="token-group">
-          <h3 class="token-group-title">Bordas &amp; Raios</h3>
+          <h3 class="token-group-title">Motion &amp; Easings</h3>
           <div class="token-list">
-            <div class="token-row"><code>--radius-sm</code><span>0.375rem</span></div>
-            <div class="token-row"><code>--radius-md</code><span>0.75rem</span></div>
-            <div class="token-row"><code>--radius-lg</code><span>1.25rem</span></div>
-            <div class="token-row"><code>--radius-xl</code><span>2rem</span></div>
-            <div class="token-row"><code>--border-thin</code><span>1px solid var(--color-border)</span></div>
-            <div class="token-row"><code>--border-glow</code><span>1px solid rgba(196,164,130,.2)</span></div>
+            <div class="token-row"><code>--ease-default</code><span>cubic-bezier(0.32,0.72,0,1)</span></div>
+            <div class="token-row"><code>--ease-bounce</code><span>cubic-bezier(0.34,1.56,0.64,1)</span></div>
+            <div class="token-row"><code>--ease-spring</code><span>cubic-bezier(0.22,1,0.36,1)</span></div>
+            <div class="token-row"><code>--duration-fast</code><span>200ms</span></div>
+            <div class="token-row"><code>--duration-normal</code><span>350ms</span></div>
+            <div class="token-row"><code>--duration-slow</code><span>500ms</span></div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- ═══ SEÇÃO: COMPONENTES ═══ -->
     <section class="content-section" id="componentes">
@@ -526,7 +903,7 @@
           <div class="rule-number">02</div>
           <div class="rule-content">
             <h3>Botões com Micro-movimento</h3>
-            <p>Botões de ação principais devem ter o texto alinhado à esquerda e o ícone de seta envolto em uma bolha à direita, com transições físicas suaves usando <code>cubic-bezier(0.32, 0.72, 0, 1)</code>. O ícone deve se deslocar levemente no hover.</p>
+            <p>Botões de ação principais devem ter o texto alinhado à esquerda e o ícone de seta envolto em uma bolha à direita, com transições físicas suaves usando <code>var(--ease-default)</code>. O ícone deve se deslocar levemente no hover.</p>
             <div class="rule-example">
               <button class="demo-button">
                 <span>Agende sua Consultoria</span>
@@ -546,9 +923,309 @@
       </div>
     </section>
 
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: MOTION DESIGN (V2 NEW)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="motion">
+      <div class="section-tag">Design System</div>
+      <h2 class="section-title">Motion Design</h2>
+      <p class="section-intro">Micro-animações orgânicas inspiradas nos movimentos suaves de gavetas e portas de marcenaria fina. Cada easing é calibrado para transmitir precisão e qualidade.</p>
+
+      <!-- Animation demos -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-lg); margin-bottom: var(--space-lg); color: var(--theme-text);">Animações</h3>
+      <div class="motion-demo-container">
+        <div class="motion-demo-row">
+          <div class="motion-demo-label">
+            <h4>Fade Up</h4>
+            <code>fadeUp</code>
+          </div>
+          <div class="motion-demo-box">↑</div>
+          <button class="motion-trigger-btn" data-anim="anim-fadeUp">Demonstrar</button>
+        </div>
+        <div class="motion-demo-row">
+          <div class="motion-demo-label">
+            <h4>Fade In</h4>
+            <code>fadeIn</code>
+          </div>
+          <div class="motion-demo-box">◉</div>
+          <button class="motion-trigger-btn" data-anim="anim-fadeIn">Demonstrar</button>
+        </div>
+        <div class="motion-demo-row">
+          <div class="motion-demo-label">
+            <h4>Slide Left</h4>
+            <code>slideInLeft</code>
+          </div>
+          <div class="motion-demo-box">←</div>
+          <button class="motion-trigger-btn" data-anim="anim-slideLeft">Demonstrar</button>
+        </div>
+        <div class="motion-demo-row">
+          <div class="motion-demo-label">
+            <h4>Slide Right</h4>
+            <code>slideInRight</code>
+          </div>
+          <div class="motion-demo-box">→</div>
+          <button class="motion-trigger-btn" data-anim="anim-slideRight">Demonstrar</button>
+        </div>
+        <div class="motion-demo-row">
+          <div class="motion-demo-label">
+            <h4>Scale In</h4>
+            <code>scaleIn</code>
+          </div>
+          <div class="motion-demo-box">⬡</div>
+          <button class="motion-trigger-btn" data-anim="anim-scaleIn">Demonstrar</button>
+        </div>
+      </div>
+
+      <!-- Easing Curves -->
+      <h3 style="font-family: var(--font-display); font-size: var(--text-lg); margin-top: var(--space-2xl); margin-bottom: var(--space-lg); color: var(--theme-text);">Curvas de Easing (hover para demonstrar)</h3>
+      <div class="easing-grid">
+        <div class="easing-card" data-easing="default">
+          <h4>Default</h4>
+          <code>cubic-bezier(0.32, 0.72, 0, 1)</code>
+          <div class="easing-bar"><div class="easing-bar-fill"></div></div>
+        </div>
+        <div class="easing-card" data-easing="in">
+          <h4>Ease In</h4>
+          <code>cubic-bezier(0.55, 0, 1, 0.45)</code>
+          <div class="easing-bar"><div class="easing-bar-fill"></div></div>
+        </div>
+        <div class="easing-card" data-easing="out">
+          <h4>Ease Out</h4>
+          <code>cubic-bezier(0, 0.55, 0.45, 1)</code>
+          <div class="easing-bar"><div class="easing-bar-fill"></div></div>
+        </div>
+        <div class="easing-card" data-easing="bounce">
+          <h4>Bounce</h4>
+          <code>cubic-bezier(0.34, 1.56, 0.64, 1)</code>
+          <div class="easing-bar"><div class="easing-bar-fill"></div></div>
+        </div>
+        <div class="easing-card" data-easing="spring">
+          <h4>Spring</h4>
+          <code>cubic-bezier(0.22, 1, 0.36, 1)</code>
+          <div class="easing-bar"><div class="easing-bar-fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: ANÁLISE COMPETITIVA (V2 NEW — CONFIDENCIAL)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="competitiva">
+      <div class="section-tag">Estratégia</div>
+      <h2 class="section-title">Análise Competitiva</h2>
+      <p class="section-intro">Benchmark de 13 concorrentes regionais e nacionais, com análise de posicionamento, forças e fraquezas que fundamentam a diferenciação da Realizzati.</p>
+
+      <div class="competitive-wrapper">
+        <div class="competitive-warning">
+          <span class="warn-icon">🔒</span>
+          <span>Uso Interno Estratégico · Confidencial · Não compartilhar externamente</span>
+        </div>
+
+        <details class="competitive-details">
+          <summary>Abrir Benchmark de Concorrentes (13 empresas)</summary>
+
+          <div class="competitive-content">
+            <div class="competitor-grid">
+              <div class="competitor-card">
+                <div class="competitor-name">Evolution Móveis</div>
+                <a class="competitor-url" href="https://www.evolutionmoveis.com.br/" target="_blank" rel="noopener">evolutionmoveis.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">+20 anos</span>
+                  <span class="competitor-tag competitor-tag--strength">Acabamento premium</span>
+                  <span class="competitor-tag competitor-tag--weakness">SEO genérico</span>
+                </div>
+                <p class="competitor-summary">Linguagem muito similar à Realizzati (precisão, fidelidade técnica). Forte presença local em Blumenau mas sem diferenciação digital clara.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Italínea Harz</div>
+                <a class="competitor-url" href="https://italineaharz.com.br/" target="_blank" rel="noopener">italineaharz.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Marca nacional</span>
+                  <span class="competitor-tag competitor-tag--strength">Financiamento próprio</span>
+                  <span class="competitor-tag competitor-tag--weakness">Módulos fixos</span>
+                </div>
+                <p class="competitor-summary">Franquia com forte apelo de escala e crédito. Limitação: não oferece personalização real — módulos pré-definidos.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Miranda Móveis</div>
+                <a class="competitor-url" href="https://mirandamoveis.com/" target="_blank" rel="noopener">mirandamoveis.com</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Projeto 3D</span>
+                  <span class="competitor-tag competitor-tag--strength">Financiamento Viacredi</span>
+                  <span class="competitor-tag competitor-tag--weakness">Site desatualizado</span>
+                </div>
+                <p class="competitor-summary">Foco em custo-benefício com financiamento facilitado. Linguagem genérica ("alta qualidade", "melhor preço").</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">São José Planejados</div>
+                <a class="competitor-url" href="https://www.moveisplanejadossaojose.com.br/" target="_blank" rel="noopener">moveisplanejadossaojose.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Desde 1975</span>
+                  <span class="competitor-tag competitor-tag--weakness">Site datado</span>
+                  <span class="competitor-tag competitor-tag--weakness">Copy genérica</span>
+                </div>
+                <p class="competitor-summary">Tradição forte mas presença digital muito antiquada. Sem diferenciação de linguagem premium.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Vivali Planejados</div>
+                <a class="competitor-url" href="https://www.vivaliplanejados.com.br/" target="_blank" rel="noopener">vivaliplanejados.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">+2000 projetos</span>
+                  <span class="competitor-tag competitor-tag--strength">5 anos garantia</span>
+                  <span class="competitor-tag competitor-tag--weakness">Custo-benefício focus</span>
+                </div>
+                <p class="competitor-summary">Forte em volume e depoimentos. Posicionamento "ótimo custo-benefício" — nicho diferente do alto padrão Realizzati.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">WB Planejados</div>
+                <a class="competitor-url" href="https://wbplanejados.com.br/" target="_blank" rel="noopener">wbplanejados.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Maquinário italiano</span>
+                  <span class="competitor-tag competitor-tag--strength">Duas lojas</span>
+                  <span class="competitor-tag competitor-tag--weakness">Sem USP digital</span>
+                </div>
+                <p class="competitor-summary">Concorrente direto em Timbó. Forte em equipamento e decoração completa, mas sem linguagem técnica diferenciada.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Cedro Design</div>
+                <a class="competitor-url" href="https://www.cedrodesign.com.br/" target="_blank" rel="noopener">cedrodesign.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Foco regional</span>
+                  <span class="competitor-tag competitor-tag--weakness">Site básico</span>
+                  <span class="competitor-tag competitor-tag--weakness">Sem posicionamento</span>
+                </div>
+                <p class="competitor-summary">Especialista regional no Médio Vale. Site muito simplificado sem SEO ou proposta de valor clara.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Marcenaria Hermann</div>
+                <a class="competitor-url" href="https://marcenariahermann.com.br/" target="_blank" rel="noopener">marcenariahermann.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Desde 1995</span>
+                  <span class="competitor-tag competitor-tag--strength">Alto padrão</span>
+                  <span class="competitor-tag competitor-tag--weakness">Site amador</span>
+                </div>
+                <p class="competitor-summary">Forte em experiência e projetos de alto padrão mas com presença digital muito fraca.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Marcenaria Falone</div>
+                <a class="competitor-url" href="https://marcenariafalone.com.br/" target="_blank" rel="noopener">marcenariafalone.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Lâminas naturais</span>
+                  <span class="competitor-tag competitor-tag--strength">Conteúdo educativo</span>
+                  <span class="competitor-tag competitor-tag--weakness">Alcance limitado</span>
+                </div>
+                <p class="competitor-summary">Bom conteúdo educativo sobre marcenaria de alto padrão. Referência em materiais nobres (lâminas naturais).</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Marcato</div>
+                <a class="competitor-url" href="https://www.marcato.com.br/" target="_blank" rel="noopener">marcato.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Desde 1950</span>
+                  <span class="competitor-tag competitor-tag--strength">10 anos garantia</span>
+                  <span class="competitor-tag competitor-tag--strength">Showrooms SP/BH</span>
+                </div>
+                <p class="competitor-summary">Referência nacional de alto padrão com ferragens europeias e precisão 1mm. Benchmark aspiracional para a Realizzati.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Attua Design</div>
+                <a class="competitor-url" href="https://attuadesign.com.br/" target="_blank" rel="noopener">attuadesign.com.br</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Design exclusivo</span>
+                  <span class="competitor-tag competitor-tag--strength">E-commerce</span>
+                  <span class="competitor-tag competitor-tag--weakness">Não é sob medida</span>
+                </div>
+                <p class="competitor-summary">Mobiliário pronto de alto padrão com curadoria. Nicho diferente (não personaliza), mas compete em percepção de luxo.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Breton</div>
+                <a class="competitor-url" href="https://www.breton.co/" target="_blank" rel="noopener">breton.co</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Carbono negativo</span>
+                  <span class="competitor-tag competitor-tag--strength">Design original</span>
+                  <span class="competitor-tag competitor-tag--strength">Premium nacional</span>
+                </div>
+                <p class="competitor-summary">Marca premium brasileira com sustentabilidade como pilar. Benchmark de comunicação visual e branding aspiracional.</p>
+              </div>
+
+              <div class="competitor-card">
+                <div class="competitor-name">Belli Móveis</div>
+                <a class="competitor-url" href="https://bellimoveis.com/" target="_blank" rel="noopener">bellimoveis.com</a>
+                <div class="competitor-tags">
+                  <span class="competitor-tag competitor-tag--strength">Desde 1995</span>
+                  <span class="competitor-tag competitor-tag--weakness">Modulados padrão</span>
+                  <span class="competitor-tag competitor-tag--weakness">Sem personalização</span>
+                </div>
+                <p class="competitor-summary">Foco em móveis modulados prontos com e-commerce. Público completamente diferente — sem ameaça direta ao alto padrão.</p>
+              </div>
+            </div>
+
+            <!-- Diferenciadores Realizzati -->
+            <div class="differentiators">
+              <h4>✦ Vantagens Competitivas da Realizzati</h4>
+              <ul>
+                <li><strong>Personalização sem limites</strong> — Diferente das franquias (Italínea, Vivali), não temos módulos fixos. Cada milímetro é ajustável ao projeto.</li>
+                <li><strong>Cronograma garantido em contrato</strong> — Nenhum concorrente regional oferece rastreabilidade de produção com data garantida contratualmente.</li>
+                <li><strong>Precisão CNC + acabamento artesanal</strong> — Combinação de tecnologia industrial com toque manual que concorrentes artesanais (Hermann, Falone) ou industriais (Italínea) não entregam sozinhos.</li>
+                <li><strong>Linguagem técnica premium</strong> — Enquanto 80% dos concorrentes usam clichês ("alta qualidade", "melhor custo-benefício"), a Realizzati fala de engenharia de detalhe.</li>
+                <li><strong>Ecossistema digital inteligente</strong> — Presença digital com rastreamento avançado (GTM/GA4/Meta CAPI), lead capture otimizado e automação — nenhum concorrente regional tem isso.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SEÇÃO: SOCIAL MEDIA TEMPLATES (V2 NEW)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="content-section" id="social">
+      <div class="section-tag">Estratégia</div>
+      <h2 class="section-title">Social Media &amp; Templates</h2>
+      <p class="section-intro">Formatos padronizados para redes sociais. Cada template respeita as safe areas de texto e mantém a identidade visual consistente.</p>
+
+      <div class="social-templates">
+        <div class="social-template">
+          <div class="social-template-preview" style="aspect-ratio: 1/1; min-height: 180px;">Post Feed</div>
+          <div class="social-template-info">
+            <div class="social-template-name">Instagram Feed</div>
+            <div class="social-template-size">1080 × 1080px</div>
+          </div>
+        </div>
+        <div class="social-template">
+          <div class="social-template-preview" style="aspect-ratio: 9/16; min-height: 180px;">Stories</div>
+          <div class="social-template-info">
+            <div class="social-template-name">Instagram Stories</div>
+            <div class="social-template-size">1080 × 1920px</div>
+          </div>
+        </div>
+        <div class="social-template">
+          <div class="social-template-preview" style="aspect-ratio: 820/312; min-height: 100px;">Capa</div>
+          <div class="social-template-info">
+            <div class="social-template-name">Facebook Cover</div>
+            <div class="social-template-size">820 × 312px</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ═══ SEÇÃO: AUDITORIA ═══ -->
     <section class="content-section" id="auditoria">
-      <div class="section-tag">Design System</div>
+      <div class="section-tag">Diretrizes</div>
       <h2 class="section-title">Auditoria de Consistência</h2>
       <p class="section-intro">Antes de publicar qualquer comunicação ou interface da Realizzati, responda estas perguntas obrigatórias.</p>
 
@@ -577,46 +1254,6 @@
       </div>
     </section>
 
-    <!-- ═══ SEÇÃO: AGENTE ═══ -->
-    <section class="content-section" id="agente">
-      <div class="section-tag">Diretrizes</div>
-      <h2 class="section-title">Diretrizes de Agente IA</h2>
-      <p class="section-intro">Regras comportamentais obrigatórias para todos os agentes de IA que operam neste workspace.</p>
-
-      <div class="agent-rules">
-        <div class="agent-rule agent-rule--critical">
-          <div class="agent-rule-tag">CRÍTICO · Git &amp; Segurança</div>
-          <h3>Proibição de Push Remoto</h3>
-          <p>É estritamente proibido realizar <code>git push</code> para repositórios remotos sem autorização explícita do desenvolvedor humano. Todo código gerado deve resultar em testes locais e no máximo um <code>git commit</code> semântico local. A revisão e o envio para a nuvem são responsabilidade do desenvolvedor humano.</p>
-        </div>
-
-        <div class="agent-rule">
-          <div class="agent-rule-tag">Frontend</div>
-          <h3>Padrões de Engenharia</h3>
-          <ul>
-            <li><strong>Mobile-First:</strong> Todo componente deve ser desenhado para telas pequenas primeiro, com prefixos responsivos para telas maiores.</li>
-            <li><strong>Tipagem:</strong> Código rigorosamente tipado com TypeScript. Tags HTML5 semânticas e atributos <code>aria-*</code>.</li>
-            <li><strong>Modularidade:</strong> Componentes complexos devem ser quebrados em partes menores antes de integrar à página principal.</li>
-          </ul>
-        </div>
-
-        <div class="agent-rule">
-          <div class="agent-rule-tag">Tom de Voz</div>
-          <h3>UX Writing &amp; Placeholders</h3>
-          <p>Persona da marca: <strong>exclusiva, sofisticada, precisa e confiável</strong>. Ao gerar placeholders, use vocabulário de alto padrão:</p>
-          <div class="agent-examples">
-            <div class="agent-ex">
-              <span class="avoid">❌ "Nossos Trabalhos"</span>
-              <span class="prefer">✅ "Projetos Exclusivos"</span>
-            </div>
-            <div class="agent-ex">
-              <span class="avoid">❌ "Fale com a gente"</span>
-              <span class="prefer">✅ "Agende sua Consultoria"</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ═══ SEÇÃO: ARQUITETURA ═══ -->
     <section class="content-section" id="arquitetura">
@@ -652,10 +1289,11 @@
       </div>
     </section>
 
+
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-logo">Realizzati Móveis</div>
-      <p>Brand Book · Uso Interno · Confidencial</p>
+      <p>Brand Book V2 · Uso Interno · Confidencial · SeafeetStarken © 2026</p>
     </footer>
 
   </main>

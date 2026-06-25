@@ -39,3 +39,23 @@ Este arquivo serve como memória fixa e persistente para os agentes de IA que tr
 ## 🔌 Configurações de Rede & Servidor
 * **Vite Dev Server:** Rodando localmente na porta `8080` (configuração do host em `0.0.0.0` para permitir acesso de rede).
 * **Túnel de Acesso Externo:** Mapeado no `package.json` sob o script `npm run tunnel` (utiliza `localhost.run` direcionado para `127.0.0.1:8080`, livre de verificação de IP).
+
+## 📝 Diário de Bordo & Próximos Passos (Última Atualização: 2026-06-25)
+
+### O que foi feito hoje:
+1. **Pivot do Brand Book V2 para Tema Claro (Soft Cream):**
+   - Transicionamos o layout do design system de Pure Dark para Soft Cream (`#FAF8F5`) por padrão.
+   - Preservamos a Sidebar lateral (Dark Espresso) e a seção Hero (madeira escura nobre) para manter o visual premium de alto padrão.
+2. **Correção Cirúrgica de Contraste e Legibilidade (style.css):**
+   - Adicionamos blocos de sobrescrita específicos focados nas seções de conteúdo (`.content-section`).
+   - Todos os cards (Posicionamento Estratégico, Perfis de Cliente, Pilares, Copy por Segmento, Objeções, Benchmark Competitivo, Templates Sociais, Iconografia, etc.) agora possuem fundo branco puro (`#FFFFFF`) e tipografia escura (`var(--theme-text-muted)` ou `#352520`), eliminando o bug de texto creme em fundo claro.
+3. **Migração para Logos em Vetor (SVG) com Fundo Transparente:**
+   - Copiamos as novas logos SVG (`01.svg` a `06.svg`, `perfil.svg`, `perfl 02.svg`) para `assets/logos/`.
+   - Mapeamos as logos corretas no HTML de acordo com a cor do card (ex: `03.svg` com tipografia escura para fundo claro; `01.svg` e `04.svg` com tipografia branca para fundo escuro).
+   - Escrevemos e executamos o script utilitário (`scratch/remove-bg.js`) para decompor as logos vetorizadas e remover cirurgicamente os subcaminhos de fundo branco gerados no autotrace, resultando em logos perfeitamente transparentes.
+4. **Refinamento de Copy (Design System):**
+   - Limpamos todas as menções à oferta de "projeto renderizado em 3D" na persona "O Esteta/Arquiteto" conforme diretriz de marca de não usar esse gatilho.
+
+### Próximos Passos:
+1. **Validação do Visual com o Cliente:** Apresentar a interface final e responsiva das logos e do manual de marca em `http://127.0.0.1:8081`.
+2. **Campanhas Google Ads/Meta Ads:** Retomar os scripts de automação ou auditoria de campanhas conforme necessidade, usando as novas diretrizes refinadas de linguagem.
