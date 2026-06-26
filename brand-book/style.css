@@ -3015,3 +3015,12 @@ body {
 .content-section .photo-placeholder-text {
   color: var(--color-gray-500);
 }
+
+/* ── Ajustes Adicionais de Contraste ── */
+.content-section .rule-content p {
+  color: var(--theme-text-muted);
+}
+.content-section .rule-content code {
+  color: var(--color-brass-dark);
+  background: var(--color-brass-muted);
+}
