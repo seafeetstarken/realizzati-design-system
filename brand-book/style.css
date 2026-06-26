@@ -2081,10 +2081,10 @@ body {
 }
 
 [data-theme="dark"] .photo-placeholder {
-  background: linear-gradient(135deg, var(--color-gray-200), var(--color-gray-100));
+  background: linear-gradient(135deg, var(--color-espresso), var(--color-pure-dark));
   border-color: var(--theme-border);
 }
-[data-theme="dark"] .photo-placeholder-text { color: var(--color-gray-500); }
+[data-theme="dark"] .photo-placeholder-text { color: var(--color-muted); }
 
 .photo-guidelines {
   display: grid;
@@ -2976,4 +2976,42 @@ body {
 }
 .content-section .type-note {
   color: var(--theme-text-muted);
+}
+
+/* ── Regras de Componentes ── */
+.content-section .rule-card {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+
+/* ── Grid & Motion Demos ── */
+.content-section .grid-demo {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+.content-section .motion-demo-row {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+.content-section .easing-card {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+.content-section .easing-bar {
+  background: var(--theme-border);
+}
+
+/* ── Zona de Exclusão ── */
+.content-section .logo-exclusion {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+
+/* ── Direção de Arte e Fotografia ── */
+.content-section .photo-placeholder {
+  background: linear-gradient(135deg, var(--color-gray-100), var(--color-gray-200));
+  border-color: var(--theme-border);
+}
+.content-section .photo-placeholder-text {
+  color: var(--color-gray-500);
 }
