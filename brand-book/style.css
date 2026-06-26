@@ -2926,3 +2926,54 @@ body {
 .site-footer p {
   color: var(--theme-text-muted) !important;
 }
+
+/* ── Paleta de Cores e Swatches ── */
+.content-section .color-swatch {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+.content-section .swatch-info {
+  background: var(--theme-bg-surface);
+  border-left: 1px solid var(--theme-border);
+}
+.content-section .swatch-hsl {
+  color: var(--theme-text-muted);
+  opacity: 0.85;
+}
+.content-section .swatch-usage {
+  color: var(--theme-text-muted);
+  border-top-color: var(--theme-border);
+}
+.content-section .swatch-donts {
+  background: var(--theme-bg);
+  color: var(--theme-text-muted);
+  border-left-color: rgba(220, 80, 80, 0.5);
+}
+
+/* ── Escalas Semânticas ── */
+.content-section .semantic-swatch {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+.content-section .semantic-value {
+  color: var(--theme-text-muted);
+  opacity: 0.85;
+}
+
+/* ── Cards de Tipografia ── */
+.content-section .type-card {
+  background: var(--theme-bg-surface);
+  border-color: var(--theme-border);
+}
+.content-section .type-sample {
+  background: var(--theme-bg);
+  border-bottom-color: var(--theme-border);
+}
+.content-section .type-weights span {
+  background: var(--theme-bg);
+  border-color: var(--theme-border);
+  color: var(--theme-text-muted);
+}
+.content-section .type-note {
+  color: var(--theme-text-muted);
+}
