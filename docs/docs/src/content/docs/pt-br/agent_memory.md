@@ -27,7 +27,7 @@ Este arquivo serve como memória fixa e persistente para os agentes de IA que tr
 ## 📁 Arquitetura do Workspace & Responsabilidades
 
 * **Decisões de UI & Design System:** Residem na pasta `realizzati-design-system/`.
-* **Scripts de Tráfego & Google/Meta Ads:** Residem na pasta `marketing-automations/`.
+* **Scripts de Tráfego & Google/Meta Ads:** Residem na pasta `core/marketing-automations/`.
 * **Frontend Lead Capture (App React):** Reside na pasta `real-lead-capture/`.
 * **Ferramental Interno & Skills da IA:** Residem na pasta `internal-tools/`.
 
